@@ -17,3 +17,6 @@ test_script:
 - '%xunit20%\xunit.console.x86 "c:\projects\ext\src\Bin\Tests\LogoFX.Client.Mvvm.ViewModel.Extensions.Tests.dll"'
 
 clone_folder: c:\projects\ext
+
+on_finish:
+  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
