@@ -14,7 +14,7 @@ build:
   verbosity: minimal
 
 test_script:
-- '%xunit20%\xunit.console.x86 "c:\projects\ext\src\Bin\Tests\LogoFX.Client.Mvvm.ViewModel.Extensions.Tests.dll"'
+- '%xunit20%\xunit.console.x86 "c:\projects\ext\src\Bin\Tests\LogoFX.Client.Mvvm.ViewModel.Extensions.Tests.dll"' -maxthreads 1
 
 clone_folder: c:\projects\ext
 
